@@ -596,7 +596,9 @@ img {
   white-space: normal;
   margin: 0 auto 20px;
 }
-
+.input-wrp__textarrea{
+  grid-column: 1/3;
+}
 .contact_form {
   display: grid;
   grid-template-columns: repeat(2, minmax(280px, 48%));
