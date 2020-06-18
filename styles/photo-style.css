@@ -1,0 +1,118 @@
+#photogl {
+  padding: 0 30px;
+}
+
+.main-slider-wrp {
+  max-width: 1150px;
+  margin: 0 auto;
+  border-top: 10px solid #0b3d62;
+}
+
+.main-slider-wrp .slick-list {
+  max-height: 700px;
+}
+
+.main-slider__pic {
+  max-height: 700px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider-nav {
+  padding: 10px 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.slider-nav .slick-list {
+  padding: 5px 50px !important;
+}
+
+.slider-nav .slick-track {
+  max-height: 200px;
+}
+
+.sub-slider-wrp {
+  border-bottom: 5px solid #0b3c62d8;
+}
+
+.slider-nav__pic {
+  border-top: 5px solid transparent;
+}
+
+.slider-nav__pic {
+  display: block;
+  outline: none;
+  height: 100%;
+  margin: 5px 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.slider-nav__pic:hover:after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0b3d62), to(#fff)), url(../img/zoom_logo.png);
+  background-image: linear-gradient(180deg, #0b3d62 0%, #fff 100%), url(../img/zoom_logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: color;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.slider-nav__pic img {
+  height: 100%;
+}
+
+.nav-pic-wrp.slick-current a {
+  border-top: 5px solid #0b3c62d8;
+}
+
+.btn-prev,
+.btn-next {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0b3d62;
+  z-index: 10;
+  background-image: url(../img/arrow_next.svg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.btn-prev {
+  -webkit-transform: translate(-50%, -50%) rotate(-180deg);
+          transform: translate(-50%, -50%) rotate(-180deg);
+  top: 50%;
+  left: 0px;
+}
+
+.btn-next {
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  top: 50%;
+  right: 0px;
+}
+
+@media (max-width: 450px) {
+  .btn-prev,
+  .btn-next {
+    width: 30px;
+    height: 30px;
+    background-size: 10px;
+  }
+}
+/*# sourceMappingURL=photo-style.css.map */
